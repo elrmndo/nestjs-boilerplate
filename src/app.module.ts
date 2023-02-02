@@ -5,6 +5,7 @@ import appConfig from './config/app.config';
 import databaseConfig from './config/database.config';
 import { TypeOrmConfigService } from './database/typeorm-config.service';
 import { HomeModule } from './home/home.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { HomeModule } from './home/home.module';
       useClass: TypeOrmConfigService,
     }),
     HomeModule,
+    UsersModule,
   ],
 })
 export class AppModule {}
