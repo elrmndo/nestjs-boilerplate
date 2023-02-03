@@ -24,4 +24,5 @@ async function bootstrap() {
   await app.listen(configService.get<number>('app.port'));
 }
 
+// eslint-disable-next-line no-void
 void bootstrap();

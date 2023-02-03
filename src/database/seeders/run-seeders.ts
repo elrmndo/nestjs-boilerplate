@@ -11,4 +11,5 @@ const runSeeders = async () => {
   await app.close();
 };
 
+// eslint-disable-next-line no-void
 void runSeeders();
