@@ -12,7 +12,7 @@ export class UsersService {
 
   findAll() {
     console.log(this);
-    return `This action returns all users`;
+    return ['user1', 'user2', 'user3'];
   }
 
   findOne(id: number) {
