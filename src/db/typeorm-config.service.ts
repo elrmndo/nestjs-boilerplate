@@ -23,7 +23,7 @@ export class TypeOrmConfigService implements TypeOrmOptionsFactory {
       migrations: [`${__dirname}/migrations/**/*{.ts,.js}`],
       cli: {
         entitiesDir: 'src',
-        migrationsDir: 'src/database/migrations',
+        migrationsDir: 'src/db/migrations',
         subscribersDir: 'subscribers',
       },
     } as TypeOrmModuleOptions;
