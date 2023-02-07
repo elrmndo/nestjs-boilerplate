@@ -1,6 +1,6 @@
-import { ClassSerializerInterceptor, VersioningType } from '@nestjs/common';
+import { VersioningType } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { NestFactory, Reflector } from '@nestjs/core';
+import { NestFactory } from '@nestjs/core';
 import * as compression from 'compression';
 import helmet from 'helmet';
 import { AppModule } from './app.module';
@@ -18,8 +18,6 @@ async function bootstrap() {
   });
 
   app.enableVersioning({ type: VersioningType.URI });
-
-  app.useGlobalInterceptors(new ClassSerializerInterceptor(app.get(Reflector)));
 
   await app.listen(+configService.get<number>('app.port'));
 }
