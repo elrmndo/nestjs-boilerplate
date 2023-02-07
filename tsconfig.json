@@ -16,6 +16,20 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@/*": ["src/*"],
+      "@Config/*": ["src/config/*"],
+      "@Database/*": ["src/db/*"],
+      "@Docs/*": ["src/docs/*"],
+      "@Modules/*": ["src/modules/*"],
+      "@Shared/*": ["src/shared/*"],
+      "@Constants/*": ["src/shared/constants/*"],
+      "@Decorators/*": ["src/shared/decorators/*"],
+      "@Filters/*": ["src/shared/filters/*"],
+      "@Interceptors/*": ["src/shared/interceptors*"],
+      "@Types/*": ["src/shared/types*"],
+      "@Utils/*": ["src/shared/utils*"]
+    }
   }
 }

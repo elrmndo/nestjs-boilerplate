@@ -2,11 +2,11 @@ import { ClassSerializerInterceptor, Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { APP_INTERCEPTOR } from '@nestjs/core';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import appConfig from './config/app.config';
-import databaseConfig from './config/database.config';
-import { TypeOrmConfigService } from './db/typeorm-config.service';
-import { HomeModule } from './modules/home/home.module';
-import { UsersModule } from './modules/users/users.module';
+import appConfig from '@Config/app.config';
+import databaseConfig from '@Config/database.config';
+import { TypeOrmConfigService } from '@Database/typeorm-config.service';
+import { HomeModule } from '@Modules/home/home.module';
+import { UsersModule } from '@Modules/users/users.module';
 
 @Module({
   imports: [

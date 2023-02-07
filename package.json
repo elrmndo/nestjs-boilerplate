@@ -98,7 +98,21 @@
       "**/*.(t|j)s"
     ],
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/../src/$1",
+      "^@Config/(.*)$": "<rootDir>/../src/config/$1",
+      "^@Database/(.*)$": "<rootDir>/../src/db/$1",
+      "^@Docs/(.*)$": "<rootDir>/../src/docs/$1",
+      "^@Modules/(.*)$": "<rootDir>/../src/modules/$1",
+      "^@Shared/(.*)$": "<rootDir>/../src/shared/$1",
+      "^@Constants/(.*)$": "<rootDir>/../src/shared/constants/$1",
+      "^@Decorators/(.*)$": "<rootDir>/../src/shared/decorators/$1",
+      "^@Filters/(.*)$": "<rootDir>/../src/shared/filters/$1",
+      "^@Interceptors/(.*)$": "<rootDir>/../src/shared/interceptors/$1",
+      "^@Types/(.*)$": "<rootDir>/../src/shared/types/$1",
+      "^@Utils/(.*)$": "<rootDir>/../src/shared/utils/$1"
+    }
   },
   "engines": {
     "npm": ">=8.0.0 <9.0.0",
