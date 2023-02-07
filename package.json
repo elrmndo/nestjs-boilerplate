@@ -110,6 +110,7 @@
       "^@Decorators/(.*)$": "<rootDir>/../src/shared/decorators/$1",
       "^@Filters/(.*)$": "<rootDir>/../src/shared/filters/$1",
       "^@Interceptors/(.*)$": "<rootDir>/../src/shared/interceptors/$1",
+      "^@Interfaces/(.*)$": "<rootDir>/../src/shared/interfaces/$1",
       "^@Types/(.*)$": "<rootDir>/../src/shared/types/$1",
       "^@Utils/(.*)$": "<rootDir>/../src/shared/utils/$1"
     }

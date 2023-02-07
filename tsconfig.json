@@ -28,6 +28,7 @@
       "@Decorators/*": ["src/shared/decorators/*"],
       "@Filters/*": ["src/shared/filters/*"],
       "@Interceptors/*": ["src/shared/interceptors*"],
+      "@Interfaces/*": ["src/shared/interfaces*"],
       "@Types/*": ["src/shared/types*"],
       "@Utils/*": ["src/shared/utils*"]
     }
