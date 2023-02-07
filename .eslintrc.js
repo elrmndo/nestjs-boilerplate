@@ -29,5 +29,6 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'no-unused-vars': 'off',
     'require-await': 'off',
+    'no-void': 'off',
   },
 };
